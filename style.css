@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley&family=Open+Sans&display=swap');
+/*GENERAL*/
+* {
+    padding: 1%;
+    margin: 0;
+    font-family: 'Open Sans', 'Time new Roman', sans-serif;
+}
+
+h2 {
+    font-size: 1.9em;
+}
+
+h1 {
+    display: none;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+img {
+    filter: saturate(0%) sepia(20%);
+}
+
+/*HEADER*/
+.suscribers {
+    padding: 4%;
+    background-color: rgb(155, 155, 155);
+    color: antiquewhite;
+    font-size: 1.3em;
+    text-align: center;
+
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.562);
+    z-index: 10;
+}
+
+
+header img {
+    width: 40%;
+    display: block;
+    margin: auto;
+    margin-top: 1%;
+}
+
+/* NAVBAR */
+
+ul {
+    text-align: center;
+}
+
+.navList {
+    display: inline;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    padding: 0.5% 2%;
+}
+
+
+.navList a {
+    text-decoration: none;
+    color: grey;
+}
+
+.navList a:hover {
+    background-color: rgba(0, 0, 0, 0.596);
+    color: white;
+    border-radius: 5%;
+}
+
+/* Principal*/
+
+.principal {
+    display: flex;
+    padding: 3%;
+    justify-content: space-between;
+}
+
+/* News */
+
+main {
+    width: 60%;
+}
+
+main .reporterName {
+    font-family: 'Besley', serif;
+}
+
+main .photo {
+    max-width: 600px;
+}
+
+
+
+main .newsContent {
+    display: flex;
+}
+
+main .newsContent p {
+    padding: 0 2%;
+    text-align: justify;
+}
+
+/* Aside */
+
+
+.subtitleAside {
+    font-size: 0.8em;
+}
+
+aside {
+    width: 30%;
+    border-left: 2px solid black;
+}
+
+aside .ads {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+aside img {
+    width: 90%;
+}
+
+/*Form*/
+
+.suscribe {
+    margin: auto;
+    border-top: 3px solid black;
+    background-color: rgb(221, 221, 221);
+    padding: 2% 0 2% 10%;
+    box-shadow: 2px 2px 10px 6px rgb(2, 2, 2, 0.315);
+    margin-bottom: 3%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label.userInfo {
+    justify-content: space-between;
+    display: flex;
+    width: 80%;
+}
+
+form input, 
+form select {
+    padding: 12px 20px;
+    width: 80%;
+}
+
+form label.userType {
+    width: 5%;
+}
+
+form button {
+    cursor: pointer;
+    width: 20%;
+    text-align: center;
+    padding: 12px 20px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px 6px rgb(2, 2, 2, 0.315);
+}
+
+form button:hover {
+    background-color: rgba(0, 0, 0, 0.658);
+    color: white;
+}
