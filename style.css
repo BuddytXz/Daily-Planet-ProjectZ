@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Besley&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Besley&family=Finger+Paint&family=Open+Sans&display=swap');
 /*GENERAL*/
 * {
     padding: 1%;
@@ -51,6 +51,7 @@ header img {
 
 ul {
     text-align: center;
+    font-size: 1em;
 }
 
 .navList {
@@ -155,8 +156,12 @@ form select {
     width: 80%;
 }
 
+.radio {
+    width: 20%;
+}
+
 form label.userType {
-    width: 5%;
+    width: 25%;
 }
 
 form button {
@@ -173,4 +178,143 @@ form button {
 form button:hover {
     background-color: rgba(0, 0, 0, 0.658);
     color: white;
+}
+
+footer {
+    text-align: center;
+
+}
+
+/* HACKED*/
+
+.joke {
+    display: block;
+    filter: saturate(150%) sepia(0%);
+    width: 60%;
+    margin: auto;
+}
+
+.joke {
+    font-size: 2.3em;
+    text-align: center;
+    font-family: 'Finger Paint', cursive;
+    color: brown;
+}
+
+/* MEDIA QUERIES*/
+
+@media (max-width: 1440px) {
+    main .photo {
+        max-width: 600px;
+    }
+
+    .navList {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 1024px) {
+    main .photo {
+        max-width: 500px;
+    }
+
+    .navList {
+        font-size: 1.1em;
+    }
+
+    .suscribe {
+        margin: 0 2% 0 2%;
+    }
+
+    form input,
+    form select {
+        padding: 13px 22px;
+        width: 77%;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2em;
+    }
+
+    .principal  {
+        flex-direction: column;
+    }
+    main {
+        width: 100%;
+    }
+
+    main .photo {
+        max-width: 600px;
+    }
+
+    aside {
+        width: 100%;
+        border-left: 0;
+        border-top: 2px solid black;
+        margin-top: 5%;
+    }
+    aside article {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .ads {
+        width: 43%;
+        font-size: 1em;
+    }
+
+    .ads:last-child img {
+        display: none;
+    }
+
+    form input,
+    form select {
+        padding: 13px 22px;
+        width: 70%;
+    }
+}
+
+@media (max-width:450px) {
+    h2 {
+        font-size: 1.5em;
+    }
+
+    main .photo {
+        max-width: 300px;
+    }
+
+    .ads img {
+        width: 300px;
+    }
+
+    .ads {
+        width: 60%;
+    }
+
+    form label.userType {
+        width: 45%;
+    }
+
+    form input,
+    form select {
+        padding: 13px 22px;
+        width: 45%;
+    }
+
+    form button {
+        width: 40%;
+    }
+}
+
+@media (max-width: 390px) {
+    form label.userType {
+        width: 100%;
+    }
+
+    form button {
+        margin: 20px 74px 20px;
+    }
 }
